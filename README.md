@@ -1,4 +1,4 @@
-Built using php 8.1, mysql 8.0, docker and composer.
+Built using php 8.1, mysql 8.0, docker and composer. Developed for Ubuntu runnign on WSL2. Uses a forked version of the 'codeguy/upload' simple filehandling composer package.
 
 CLI instructions:
 
