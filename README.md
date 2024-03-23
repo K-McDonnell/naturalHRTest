@@ -1,6 +1,7 @@
 Built using php 8.1, mysql 8.0, docker and composer.
 
-cli instructions
+CLI instructions:
+
 docker-compose build  
 
 docker-compose up -d
