@@ -1,0 +1,13 @@
+{
+    "require": {
+        "codeguy/upload": "dev-master",
+      "ext-pdo": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/KPMD-DEV/Upload",
+            "no-api": true
+        }
+    ]
+}

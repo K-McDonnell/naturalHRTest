@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+ php:
+  image: app-php:0.0.1
+  build:
+   context: ./docker
+   dockerfile: php
+  depends_on:
+   - db
+  ports:
+   - "80:80"
+  networks:
+   - app-net
+  volumes:
+   - '.:/var/www/html'
+ db:
+  image: app-db:0.0.1
+  command: --default-authentication-plugin=mysql_native_password
+  hostname: app-db
+  build:
+   context: ./docker
+   dockerfile: mysql
+  ports:
+   - "3306:3306"
+  networks:
+   - app-net
+networks:
+ app-net:

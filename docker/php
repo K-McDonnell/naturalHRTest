@@ -1,0 +1,7 @@
+FROM php:8.1-apache
+RUN docker-php-ext-install pdo pdo_mysql
+COPY src/ /var/www/html
+COPY nathr.com.conf /etc/apache2/sites-available/
+RUN a2ensite nathr.com.conf
+RUN service apache2 restart
+EXPOSE 80
